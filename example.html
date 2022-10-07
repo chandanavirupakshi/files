@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Title of the document</title>
+    <style>
+      * {
+        box-sizing: border-box;
+        font-size: 21px;
+      }
+      body {
+        display: flex;
+        flex-direction: column;
+        min-height: 100vh;
+        margin-left: 210px;
+        width: 67%;
+height: 60%;
+        background-color: orange;
+
+      }
+      .main {
+        display: flex;
+        flex: 1;
+      }
+      .main  article {
+        flex: 1;
+        border-radius: 25px;
+        border-style: solid ;
+        border-width: 5px;
+      }
+      .main  nav,
+      .main  aside {
+        flex: 0 0 20vw;
+        background-color:lightgray;
+        border-radius: 25px;
+        border-style: solid ;
+        border-width: 5px;
+      }
+      .main  nav {
+        order: -1;
+      }
+      header,
+      footer {
+        background-color: lightgray;
+        height: 15vh;
+        border-radius: 25px;
+        border-style: solid ;
+        border-width: 5px;
+      }
+      header,
+      footer,
+      article,
+      nav,
+      aside {
+        text-align:center;
+      }
+    </style>
+  </head>
+  <body>
+    <header>Header</header>
+    <div class="main">
+      <article>Article
+        <header>Header</header>
+        <article style="height:230px ;">Article</article>
+        <footer>Footer</footer>
+      </article>
+      
+      <nav>Nav</nav>
+      <aside>Aside</aside>
+    </div>
+    <footer>Footer</footer>
+  </body>
+</html>
