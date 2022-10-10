@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Styled hovered button demo</title>
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+      }
+      body {
+        background-color: grey;
+        width: 100%;
+        height: 100vh;
+        font-family: sans-serif;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: -80px;
+      }
+      .button-container {
+        /* position: absolute;
+            top:50%;
+            left:50%;*/
+        width: 500px;
+        height: 100px;
+      }
+      .button {
+        background-color: white;
+        font-size: 15px;
+        text-align: center;
+        line-height: 30px;
+        color: black;
+        width: 70%;
+        height: 290%;
+        text-shadow: 0 1px #777;
+        position: relative;
+        overflow: hidden;
+      }
+      .button:before,
+      .button:after {
+        position: absolute;
+        content: "";
+        width: 100%;
+        height: 100%;
+        top: 0;
+        transform: (20deg);
+        z-index: 5;
+      }
+      .button:before {
+        top: -110%;
+        background-color: #e04e01;
+        transition: top 0.3s;
+        left: -1.9px;
+      }
+      .button:after {
+        bottom: -110%;
+        background-color: #05293e;
+        transition: bottom 0.3s;
+      }
+      .button:hover::before {
+        top: -50%;
+      }
+      .button:hover::after {
+        bottom: -50%;
+      }
+
+      .cc {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        transition: z-index 0.3s;
+        z-index: 1;
+        border-style: solid;
+      }
+
+      .button:hover .cc {
+        z-index: 10;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="button-container">
+      <div class="button">
+        <span class="cc">
+          <img
+            src="icon.png"
+            width="109"
+            height="110"
+          /><br /><br />CHANDANA<br />
+          LANGUAGES KNOWN<br />
+          C/ &nbsp; C++&nbsp;/ JAVA&nbsp;
+        </span>
+      </div>
+    </div>
+  </body>
+</html>
