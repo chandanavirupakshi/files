@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: 'poppins',sans-serif;
+    }
+    body{
+        display: flex;
+        height: 100vh;
+        justify-content: center;
+        align-items: center;
+        background: linear-gradient(135deg, #71b7e6, #9b59b6);
+    }
+    .container{
+        max-width: 700px;
+        width: 100%;
+        background: #fff;
+        padding:25px 30px;
+        border-radius: 5px;
+
+    }
+    .container .title{
+        font-size: 25px;
+        font-weight: 500px;
+        position: relative;
+    }
+    .container .title::before{
+        content: '';
+        position: absolute;
+        height: 3px;
+        width: 3px;
+        background: linear-gradient(135deg, #71b7e6, #9b59b6);
+    }
+    .container form .user-details{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        margin: 20px 0 12px 0;;
+    }
+    form .user-details .input-box{
+        margin-bottom: 15px;
+        margin: 20px 0 12px 0;
+        width: calc(100% / 2 - 20px);
+    }
+    .user-details .input-box .details{
+      display: block;
+      font-weight: 500;
+      margin-bottom: 5px;
+    }
+    .user-details .input-box input{
+        height: 45px;
+        width: 100%;
+        outline: none;
+        border-radius: 5px;
+        border: 1px solid #ccc;
+        padding-left: 15px;
+        font-size: 16px;
+    }
+    form .button{
+        height: 45px;
+        margin: 45px 0;
+        width: 100%;
+
+    }
+    form .button input{
+        height: 100%;
+        width: 100%;
+        outline: none;
+        color: #fff;
+        background: linear-gradient(135deg, #71b7e6, #9b59b6);
+    }
+</style>
+
+</head>
+<body>
+    <div class="container">
+        <div class="container">
+            <div class="title">Create Account</div>
+            <form>
+                <div class="user-details">
+                    <div class="input-box">
+                        <span class="details">Full name</span>
+                        <input type="text" placeholder="enter your name" required>
+                    </div>
+                    <div class="input-box">
+                        <span class="details">adress</span>
+                        <input type="text" placeholder="enter your adress" required>
+                    </div>
+                    <div class="input-box">
+                        <span class="details">contact</span>
+                        <input type="text" placeholder="mobile number" required>
+                    </div>
+                    <div class="input-box">
+                        <span class="details">phone number</span>
+                        <input type="text" placeholder="landline number" required>
+                    </div>
+                    <div class="input-box">
+                        <span class="details">password</span>
+                        <input type="text" placeholder="enter your password" required>
+                    </div>
+                    <div class="input-box">
+                        <span class="details">confirm password</span>
+                        <input type="text" placeholder="confirm your password" required>
+                    </div>
+                    <div  class="button">
+                        <input type="submit" value="sign up">
+                    </div>
+                </div>
+            </form>
+           
+            
+    
+           
+          </div>
+  
+      </div>
+    
+</body>
+</html>
